@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página personal</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
@@ -16,17 +17,56 @@
         </header>
         <h2>CONTENIDO PRINCIPAL</h2>
         <p>Este es el contenido principal de mi web</p>
-        <h3>Testimonios</h3>
-        <p>Me gusta mucho esta página</p>
-        <h3>Formulario de contacto</h3>
+        <div class="tamaño">
+            <p><img src="img/RMA.jfif"><iframe width="650" height="400" src="https://www.youtube.com/embed/hmQC-XLvTp0" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        </div>
+        <h3>Roadmap Web</h3>
+            <p class="p1">
+                1. HTML<br>
+                2. CSS<br>
+                3. JavaScript<br>
+                4. React<br>
+                5. Webpack
+            </p>
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Fabricante</th>
+                <th>Año</th>
+            </tr>
+            <tr>
+                <td>Xbox One</td>
+                <td>Microsoft</td>
+                <td>2015</td>
+            </tr>
+            <tr>
+                <td>PlayStation</td>
+                <td>Sony</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>Wii</td>
+                <td>Nintendo</td>
+                <td>2010</td>
+            </tr>
+        </table>
+        <div class="t1">
+            <h3>Testimonios</h3>
+            <p>Me gusta mucho esta página</p>
+        </div>
         <form>
+            <h3>Formulario de contacto</h3>
             <p>Nombre<br><input type="text" name="nombre">
             </p>
             <p>Número<br><input type="number" name="numero">
             </p>
             <p>Mensaje<br><textarea id="mensaje" name="mensaje" rows="8" cols="40"></textarea></p>
             <p></p>
-            <input type="submit" value="Enviar">
+            <div class="btn">
+                <input type="submit" value="Enviar">
+            </div>
         </form>
         <footer>
             <h3>Redes Sociales</h3>
