@@ -35,7 +35,6 @@ nav{
     flex-flow: row wrap;
     justify-content: center;
     background-color: transparent;
-    text-align: center;
 }
   
 .btn>button{
