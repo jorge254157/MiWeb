@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        const msg=() =>{
+            window.location.href='page2.html';
+        };
+
+        const vervalor=()=>{
+            const color=document.querySelector('color');
+            alert(color.value);
+        }
+    </script>
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+
+    <form action="#" method="POST">
+
+        <input type="color" value="color" onclick="vervalor()"/>
+
+
+
+
+        <input type="text" placeholder="email">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Enviar">
+        <input type="button" value="Botón" onclick="msg()"/>
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>
