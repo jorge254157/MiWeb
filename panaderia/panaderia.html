@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panadería Pedrín</title>
     <link rel="stylesheet" href="panaderia.css">
+    <link rel="stylesheet" href="general.css">
     <script src="https://kit.fontawesome.com/9c30171cb4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +17,8 @@
 <body onload="loadfn()">
     <nav>
         <div class="btn">
-            <button>Inicio</button>
-            <button>Productos</button>
+            <button><a href="panaderia.html">Inicio</a></button>
+            <button><a href="productos.html">Productos</a></button>
             <button>Pedidos especiales</button>
             <button><i class="fa-solid fa-bag-shopping"></i></button>
             <button><i class="fa-solid fa-user"></i></button>
@@ -33,26 +34,26 @@
     <div class="c-body">
         <div class="box">
             <img class="img-circular" src="img/masa-removebg-preview.png" height="250px" width="250px">
-            <p>Pan hecho con auténtica masa madre</p>
+            <h3>Pan hecho con auténtica masa madre</h3>
         </div>
         <div class="vertical"></div>
         <div class="box">
             <img class="img-circular" src="img/envios24h-removebg-preview.png" height="250px" width="250px">
-            <p>Envíos inmediatos en menos de 24h</p>
+            <h3>Envíos inmediatos en menos de 24h</h3>
         </div>
         <div class="vertical"></div>
         <div class="box">
             <img class="img-circular" src="img/mejorprecio.png" height="250px" width="250px">
-            <p>El mejor precio está en nuestra panadería</p>
+            <h3>El mejor precio está en nuestra panadería</h3>
         </div>
     </div>
     <h2>RESEÑAS</h2>
     <hr class="resena">
         <div class="r-box">
             <div class="box-r">
+                <img src="img/perfil-vacio.webp" class="img-r">
+                <h3>Alicia Robles</h3>
                 <p class="p-r">"Unos sabores fantásticos y precios aún mejores."</p>
-                <img src="img/perfil-vacio.webp" class="img-r">
-                <h3>Juan Perez</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -62,9 +63,9 @@
                 </div>
             </div>
             <div class="box-r">
-                <p class="p-r"></p>
                 <img src="img/perfil-vacio.webp" class="img-r">
-                <h3>Fernando Alonso</h3>
+                <h3>Fernando Perez</h3>
+                <p class="p-r">"Los mejores productos de la zona y unas personas increíbles."</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -74,9 +75,9 @@
                 </div>
             </div>
             <div class="box-r">
-                <p class="p-r"></p>
                 <img src="img/perfil-vacio.webp" class="img-r">
-                <h3>Pedro Picapiedra</h3>
+                <h3>Pedro Picas</h3>
+                <p class="p-r">"Trato muy cercano y una calidad impresionante."</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -88,9 +89,9 @@
         </div>
         <div class="r-box">
             <div class="box-r">
-                <p class="p-r"></p>
                 <img src="img/perfil-vacio.webp" class="img-r">
-                <h3>David Broncano</h3>
+                <h3>David Rodriguez</h3>
+                <p class="p-r">"Les recomiendo probar los croissants, son una maravilla."</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -100,9 +101,9 @@
                 </div>
             </div>
             <div class="box-r">
-                <p class="p-r"></p>
                 <img src="img/perfil-vacio.webp" class="img-r">
-                <h3>Pablo Motos</h3>
+                <h3>Pablo Seco</h3>
+                <p class="p-r">"Esta bollería y estos panes son inigualables."</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -112,9 +113,9 @@
                 </div>
             </div>
             <div class="box-r">
-                <p class="p-r"></p>
                 <img src="img/perfil-vacio.webp" class="img-r">
-                <h3>Benito Antonio</h3>
+                <h3>Benito Fernández</h3>
+                <p class="p-r">"En general la panadería es una de las mejores de la cuidad."</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -124,10 +125,31 @@
                 </div>
             </div>
         </div>
-    </section>
+        <button class="btn-r">Mostrar más reseñas</button>
     <footer>
         <div class="c-footer">
-            
+            <div class="box-f">
+                <p class="p-f">Información</p>
+                <p class="p-f">¿Quiénes somos?</p>
+                <p class="p-f2"><a href="politica.html">Política de privacidad</a></p>
+                <p class="p-f">Política de cookies</p>
+                <p class="p-f">Condiciones legales</p>
+            </div>
+            <div class="vertical2"></div>
+            <div class="box-f">
+                <p class="p-f">Haz tu pedido por teléfono</p>
+                <h2>662765451</h2>
+                <h3>Horario</h3>
+                <p class="p-f">Lunes a Sábado de 8:00 a 18:00</p>
+            </div>
+            <div class="vertical2"></div>
+            <div class="box-f">
+                <p class="p-f">Síguenos en redes sociales</p>
+                <p class="p-f"><i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i></p>
+            </div>
         </div>
     </footer>
 </body>
