@@ -9,16 +9,56 @@
     <link rel="stylesheet" href="general.css">
     <script src="https://kit.fontawesome.com/9c30171cb4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <script>
+        const abrir_panel = () => {
+        const panel = document.querySelectorAll('.panel')[0].style;
+        panel.display = panel.display === 'none' ? 'block' : 'none';
+        };
+    </script>
 </head>
 <body onload="loadfn()">
     <nav>
         <div class="btn">
             <button><a href="panaderia.html">Inicio</a></button>
             <button><a href="productos.html">Productos</a></button>
-            <button>Pedidos especiales</button>
-            <button><i class="fa-solid fa-bag-shopping"></i></button>
+            <button><a href="pedidosespeciales.html">Pedidos especiales</a></button>
+            <button class="carrito" onclick="abrir_panel()"><i class="fa-solid fa-bag-shopping"></i></button>
+            <div class="panel">
+                <h1>Mi carrito</h1>
+                <hr>
+                <div class="box-c">
+                    <img src="img/croissant.jpg" class="img-c">
+                    <div class="txt">
+                        <h2>Croissant</h2>
+                        <p class="p-c">Cantidad: 7</p>
+                        <p class="p-c">1,30€</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="box-c">
+                    <img src="img/ensaimada.jpg" class="img-c">
+                    <div class="txt">
+                        <h2>Ensaimada</h2>
+                        <p class="p-c">Cantidad: 1</p>
+                        <p class="p-c">2,70€</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="box-c">
+                    <img src="img/brioches.jpg" class="img-c">
+                    <div class="txt">
+                        <h2>Brioches</h2>
+                        <p class="p-c">Cantidad: 3</p>
+                        <p class="p-c">1,45€</p>
+                    </div>
+                </div>
+                <hr>
+                <h1>Subtotal------------16,15€</h1>
+                <hr>
+                <a href="carritocompra.html"><button class="btn-c">Tramitar pedido</button></a>
+            </div>
             <button><i class="fa-solid fa-user"></i></button>
         </div>
     </nav>
